@@ -27,10 +27,6 @@ class MainCode:
     def checkPms(self, token):
         capture_text = f"{token}, "
         headers = {
-            "authority": "discord.com",
-            "method": "GET",
-            "path": "/api/v9/users/@me/billing/subscriptions",
-            "scheme": "https",
             "Accept": "*/*",
             "Accept-Encoding": "gzip, deflate, br",
             "Accept-Language": "en-US,en;q=0.9",
