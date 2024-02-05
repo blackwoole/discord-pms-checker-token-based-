@@ -63,7 +63,6 @@ class MainCode:
             capture_text += f"Subscriptions: {ref_url.text}"
 
         # payment methods checker :D
-        headers["path"] = "/api/v9/users/@me/billing/payment-sources"
         pmsRq = session.get(pmsUrl, headers=headers)
 
         if not pmsRq.json():
