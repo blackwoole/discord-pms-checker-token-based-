@@ -67,7 +67,7 @@ class MainCode:
 
         if not pmsRq.json():
             console(Fore.LIGHTRED_EX, "BAD-LOG", f"NO PAYMENT METHOD FOUND.... | Token={token[:23]}.... | Response={pmsRq.text}")
-            capture_text += "No Payment Method, Code By virtuoso_s" # fuck u if u skid and dont give credits
+            capture_text += "No Payment Method, Code By virtuoso_s"
         else:
             console(Fore.LIGHTGREEN_EX, "GOOD-LOG", f"Payment method found... | token={token[:23]} | Response={pmsRq.json()}")
             capture_text += f"Payment methods: {pmsRq.text}, Code by virtuoso_s"
